@@ -56,7 +56,7 @@ builtInCat = List[BuiltInCategory]()
 builtInCat.Add(BuiltInCategory.OST_Doors)
 builtInCat.Add(BuiltInCategory.OST_Walls)
 
-filter = ElementMulticategoryFilter(builtInCats)
+filter = ElementMulticategoryFilter(builtInCat)
 
 elements = FilteredElementCollector(doc).WherePasses(filter).ToElements()
 
